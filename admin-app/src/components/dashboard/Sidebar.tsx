@@ -15,21 +15,21 @@ export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
   ];
 
   return (
-    <div className="w-64 bg-white shadow-lg">
-      <div className="p-6 border-b">
-        <h2 className="text-xl font-bold text-gray-900">Admin Panel</h2>
+    <div className="w-64 bg-white shadow-lg hidden lg:block">
+      <div className="p-4 sm:p-6 border-b">
+        <h2 className="text-lg sm:text-xl font-bold text-gray-900">Admin Panel</h2>
       </div>
       <nav className="mt-6">
         {menuItems.map(item => (
           <button
             key={item.id}
             onClick={() => setActiveTab(item.id)}
-            className={`w-full flex items-center px-6 py-3 text-left hover:bg-gray-50 ${
+            className={`w-full flex items-center px-4 sm:px-6 py-3 text-left hover:bg-gray-50 ${
               activeTab === item.id ? 'bg-blue-50 border-r-2 border-blue-500 text-blue-600' : 'text-gray-800'
             }`}
           >
             <span className="mr-3">{item.icon}</span>
-            {item.label}
+            <span className="text-sm sm:text-base">{item.label}</span>
           </button>
         ))}
       </nav>

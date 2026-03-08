@@ -5,17 +5,17 @@ export default function FeeManagement() {
   const [activeTab, setActiveTab] = useState('overview');
   
   const feeOverview = [
-    { category: 'Total Collected', amount: '₹12,45,000', change: '+8%', color: 'text-green-600' },
-    { category: 'Pending Fees', amount: '₹2,45,000', change: '-12%', color: 'text-red-600' },
-    { category: 'This Month', amount: '₹3,20,000', change: '+15%', color: 'text-blue-600' },
-    { category: 'Overdue', amount: '₹85,000', change: '-5%', color: 'text-orange-600' }
+    { category: 'Total Collected', amount: '12,450,000 RWF', change: '+8%', color: 'text-green-600' },
+    { category: 'Pending Fees', amount: '2,450,000 RWF', change: '-12%', color: 'text-red-600' },
+    { category: 'This Month', amount: '3,200,000 RWF', change: '+15%', color: 'text-blue-600' },
+    { category: 'Overdue', amount: '850,000 RWF', change: '-5%', color: 'text-orange-600' }
   ];
 
   const recentPayments = [
-    { student: 'John Doe', class: 'Grade 10A', amount: '₹15,000', date: '2024-01-20', status: 'Paid' },
-    { student: 'Jane Smith', class: 'Grade 9B', amount: '₹15,000', date: '2024-01-19', status: 'Paid' },
-    { student: 'Mike Johnson', class: 'Grade 11A', amount: '₹15,000', date: '2024-01-18', status: 'Pending' },
-    { student: 'Sarah Wilson', class: 'Grade 10B', amount: '₹15,000', date: '2024-01-17', status: 'Overdue' }
+    { student: 'John Doe', class: 'Grade 10A', amount: '240,000 RWF', date: '2024-01-20', status: 'Paid' },
+    { student: 'Jane Smith', class: 'Grade 9B', amount: '240,000 RWF', date: '2024-01-19', status: 'Paid' },
+    { student: 'Mike Johnson', class: 'Grade 11A', amount: '240,000 RWF', date: '2024-01-18', status: 'Pending' },
+    { student: 'Sarah Wilson', class: 'Grade 10B', amount: '240,000 RWF', date: '2024-01-17', status: 'Overdue' }
   ];
 
   const [feeStructure, setFeeStructure] = useState([
@@ -120,11 +120,11 @@ export default function FeeManagement() {
                 {feeStructure.map((fee, index) => (
                   <tr key={index} className="border-b hover:bg-gray-50">
                     <td className="py-3 px-4 font-medium">{fee.class}</td>
-                    <td className="py-3 px-4">₹{fee.tuition.toLocaleString()}</td>
-                    <td className="py-3 px-4">₹{fee.meals.toLocaleString()}</td>
-                    <td className="py-3 px-4">₹{fee.transport.toLocaleString()}</td>
-                    <td className="py-3 px-4">₹{fee.activities.toLocaleString()}</td>
-                    <td className="py-3 px-4 font-bold">₹{(fee.tuition + fee.meals + fee.transport + fee.activities).toLocaleString()}</td>
+                    <td className="py-3 px-4">{fee.tuition.toLocaleString()} RWF</td>
+                    <td className="py-3 px-4">{fee.meals.toLocaleString()} RWF</td>
+                    <td className="py-3 px-4">{fee.transport.toLocaleString()} RWF</td>
+                    <td className="py-3 px-4">{fee.activities.toLocaleString()} RWF</td>
+                    <td className="py-3 px-4 font-bold">{(fee.tuition + fee.meals + fee.transport + fee.activities).toLocaleString()} RWF</td>
                     <td className="py-3 px-4">
                       <button className="text-blue-600 hover:text-blue-800" title="Edit">
                         ✏️

@@ -3,7 +3,7 @@ export default function Overview() {
     { title: 'Total Students', value: '1,247', change: '+12 this month', color: 'bg-blue-500' },
     { title: 'Total Teachers', value: '89', change: '+3 this month', color: 'bg-green-500' },
     { title: 'Total Classes', value: '45', change: 'No change', color: 'bg-purple-500' },
-    { title: 'Pending Fees', value: '₹2,45,000', change: '-₹50,000 this week', color: 'bg-red-500' }
+    { title: 'Pending Fees', value: '2,450,000 RWF', change: '-500,000 RWF this week', color: 'bg-red-500' }
   ];
 
   const recentActivities = [

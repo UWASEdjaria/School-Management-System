@@ -19,10 +19,10 @@ export default function Reports() {
   ];
 
   const financialReports = [
-    { month: 'January 2024', collected: '₹3,20,000', pending: '₹45,000', total: '₹3,65,000', rate: '88%' },
-    { month: 'December 2023', collected: '₹3,15,000', pending: '₹30,000', total: '₹3,45,000', rate: '91%' },
-    { month: 'November 2023', collected: '₹3,10,000', pending: '₹25,000', total: '₹3,35,000', rate: '93%' },
-    { month: 'October 2023', collected: '₹3,05,000', pending: '₹40,000', total: '₹3,45,000', rate: '88%' }
+    { month: 'January 2024', collected: '3,200,000 RWF', pending: '450,000 RWF', total: '3,650,000 RWF', rate: '88%' },
+    { month: 'December 2023', collected: '3,150,000 RWF', pending: '300,000 RWF', total: '3,450,000 RWF', rate: '91%' },
+    { month: 'November 2023', collected: '3,100,000 RWF', pending: '250,000 RWF', total: '3,350,000 RWF', rate: '93%' },
+    { month: 'October 2023', collected: '3,050,000 RWF', pending: '400,000 RWF', total: '3,450,000 RWF', rate: '88%' }
   ];
 
   return (
@@ -81,11 +81,11 @@ export default function Reports() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b">
-                    <th className="text-left py-3 px-4">Class</th>
-                    <th className="text-left py-3 px-4">Students</th>
-                    <th className="text-left py-3 px-4">Avg Grade</th>
-                    <th className="text-left py-3 px-4">Pass Rate</th>
-                    <th className="text-left py-3 px-4">Top Subject</th>
+                    <th className="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Class</th>
+                    <th className="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Students</th>
+                    <th className="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Avg Grade</th>
+                    <th className="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Pass Rate</th>
+                    <th className="text-left py-3 px-4 text-xs font-medium text-gray-500 uppercase tracking-wider">Top Subject</th>
                   </tr>
                 </thead>
                 <tbody>

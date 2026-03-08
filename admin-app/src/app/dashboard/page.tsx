@@ -16,9 +16,9 @@ export default function AdminDashboard() {
   return (
     <div className="flex h-screen bg-gray-100">
       <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col min-w-0">
         <Header />
-        <main className="flex-1 p-6 overflow-y-auto">
+        <main className="flex-1 p-4 lg:p-6 overflow-y-auto">
           {activeTab === 'overview' && <Overview />}
           {activeTab === 'students' && <Students />}
           {activeTab === 'teachers' && <Teachers />}
