@@ -6,7 +6,9 @@ interface SidebarProps {
 export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
   const menuItems = [
     { id: 'overview', label: 'Overview', icon: '📊' },
+    { id: 'grades', label: 'Grades', icon: '📚' },
     { id: 'fees', label: 'Fees', icon: '💰' },
+    { id: 'notifications', label: 'Notifications', icon: '🔔' },
     { id: 'profile', label: 'Profile', icon: '👤' }
   ];
 
@@ -26,6 +28,11 @@ export default function Sidebar({ activeTab, setActiveTab }: SidebarProps) {
           >
             <span className="mr-3">{item.icon}</span>
             {item.label}
+            {item.id === 'notifications' && (
+              <span className="ml-auto bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                2
+              </span>
+            )}
           </button>
         ))}
       </nav>
