@@ -20,11 +20,11 @@ echo.
 
 :: Start Client Portal on Port 3000
 echo [ACTION] Starting Student/Parent Portal on http://localhost:3000
-start "Client Portal (Port 3000)" cmd /k "echo Starting Client Portal... && cd client-app\frontend && npm run dev"
+start "Client Portal (Port 3000)" cmd /k "echo Starting Client Portal... && cd client-app\frontend && npm run dev -- -p 3000"
 
 :: Start Admin Portal on Port 3001
 echo [ACTION] Starting Admin/Staff Portal on http://localhost:3001
-start "Admin Portal (Port 3001)" cmd /k "echo Starting Admin Portal... && cd admin-app\frontend && npm run dev"
+start "Admin Portal (Port 3001)" cmd /k "echo Starting Admin Portal... && cd admin-app\frontend && npm run dev -- -p 3001"
 
 echo.
 echo ====================================================
@@ -32,10 +32,10 @@ echo   SUCCESS: Startup commands sent!
 echo ====================================================
 echo.
 echo 1. Wait for the two new windows to finish loading.
-echo 2. Once they say "✓ Ready", open your browser.
-echo 3. Landing Page: http://localhost/school-management-system/
+echo 2. Once they say "✓ Ready" or "started server on 0.0.0.0:3000", open:
+echo    Landing Page: http://localhost/school-management-system/
 echo.
-echo NOTE: Keep the two new windows OPEN while using the site.
-echo If they show RED ERRORS, please take a screenshot!
+echo NOTE: Keep those two new windows OPEN. 
+echo If you close them, the dashboards will disappear!
 echo.
 pause
