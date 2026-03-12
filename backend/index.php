@@ -20,6 +20,7 @@ $input = json_decode(file_get_contents('php://input'), true);
 $pathArr = explode('/', rtrim($requestUri, '/'));
 $path = '/' . end($pathArr);
 
+switch ($path) {
     case '/register':
         if ($method === 'POST') {
             $response = register($input, $pdo);
