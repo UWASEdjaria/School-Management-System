@@ -38,8 +38,8 @@ export default function LoginPage() {
     <div className="min-h-screen flex items-center justify-center bg-[#0f172a] text-[#f8fafc] font-sans">
       {/* Background Blobs */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] height-[500px] bg-[#4f46e5]/10 blur-[80px] rounded-full"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[500px] height-[500px] bg-[#c084fc]/10 blur-[80px] rounded-full"></div>
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-[#4f46e5]/10 blur-[80px] rounded-full"></div>
+        <div className="absolute bottom-[-10%] right-[-10%] w-[500px] h-[500px] bg-[#c084fc]/10 blur-[80px] rounded-full"></div>
       </div>
 
       <div className="bg-[#1e293b] p-8 rounded-2xl border border-white/10 shadow-2xl w-96 relative z-10">
