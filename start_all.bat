@@ -34,6 +34,8 @@ echo.
 echo 1. Wait for both windows to show "✓ Ready" or "started server".
 echo 2. Open: http://localhost/school-management-system/
 echo.
+echo TIP: If "localhost" doesn't work, try "http://127.0.0.1"
+echo.
 echo NOTE: Do NOT close the two portal windows.
 echo.
 pause
