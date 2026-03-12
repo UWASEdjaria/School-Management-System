@@ -36,5 +36,5 @@ export const register = async (userData: any) => {
 export const logout = () => {
   Cookies.remove('token');
   localStorage.removeItem('user');
-  window.location.href = 'http://localhost/school-management-system/';
+  window.location.href = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost/school-management-system/';
 };

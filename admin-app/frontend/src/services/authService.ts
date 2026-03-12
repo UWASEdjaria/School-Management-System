@@ -26,7 +26,7 @@ export const login = async (username: string, password: string) => {
 export const logout = () => {
   Cookies.remove('token');
   localStorage.removeItem('user');
-  window.location.href = 'http://localhost/school-management-system/';
+  window.location.href = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost/school-management-system/';
 };
 
 export const getUnverifiedDevices = async () => {
